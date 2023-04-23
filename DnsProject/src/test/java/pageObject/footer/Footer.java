@@ -11,7 +11,7 @@ import java.util.logging.Logger;
 public class Footer {
     private WebDriver driver;
     WebDriverWait wait;
-
+    private By qwety = By.cssSelector("qwerty");
     private By buttonVK = By.cssSelector("[href='https://vk.com/cybersportru']");
     private By buttonTelegram = By.cssSelector("[href='#i-socials__tg']");
     private By buttonXml = By.cssSelector("[href='#i-socials__rss']");
