@@ -1,0 +1,801 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuite tests="14" failures="14" name="TestSuite" time="2.993" errors="0" skipped="0">
+  <properties>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="java.vm.version" value="19+36-2238"/>
+    <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk-19\bin"/>
+    <property name="browser" value="firefox"/>
+    <property name="maven.multiModuleProjectDirectory" value="C:\Users\USER\Desktop\DnsProject"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="java.vendor.url" value="https://java.oracle.com/"/>
+    <property name="guice.disable.misplaced.annotation.check" value="true"/>
+    <property name="path.separator" value=";"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="user.script" value=""/>
+    <property name="user.country" value="RU"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="user.dir" value="C:\Users\USER\Desktop\DnsProject"/>
+    <property name="java.vm.compressedOopsMode" value="Zero based"/>
+    <property name="java.runtime.version" value="19+36-2238"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.io.tmpdir" value="C:\Users\USER\AppData\Local\Temp\"/>
+    <property name="line.separator" value="
+"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="user.variant" value=""/>
+    <property name="stderr.encoding" value="cp866"/>
+    <property name="os.name" value="Windows 10"/>
+    <property name="classworlds.conf" value="C:\apache-maven-3.8.6\bin\m2.conf"/>
+    <property name="sun.jnu.encoding" value="Cp1251"/>
+    <property name="stdout.encoding" value="cp866"/>
+    <property name="java.library.path" value="C:\Program Files\Java\jdk-19\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files\Common Files\Oracle\Java\javapath;C:\ProgramData\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files (x86)\dotnet\;C:\apache-maven-3.8.6\bin;C:\SeleniumDrivers;C:\Program Files\Git\cmd;C:\Users\USER\AppData\Local\Microsoft\WindowsApps;;."/>
+    <property name="maven.conf" value="C:\apache-maven-3.8.6/conf"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="java.class.version" value="63.0"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="os.version" value="10.0"/>
+    <property name="library.jansi.path" value="C:\apache-maven-3.8.6\lib\jansi-native"/>
+    <property name="user.home" value="C:\Users\USER"/>
+    <property name="user.timezone" value="Europe/Moscow"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="java.specification.version" value="19"/>
+    <property name="user.name" value="USER"/>
+    <property name="java.class.path" value="C:\apache-maven-3.8.6\boot\plexus-classworlds-2.6.0.jar"/>
+    <property name="java.vm.specification.version" value="19"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher clean test -Dbrowser=firefox"/>
+    <property name="java.home" value="C:\Program Files\Java\jdk-19"/>
+    <property name="user.language" value="ru"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.vm.info" value="mixed mode, sharing"/>
+    <property name="java.version" value="19"/>
+    <property name="native.encoding" value="Cp1251"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="maven.home" value="C:\apache-maven-3.8.6"/>
+    <property name="file.separator" value="\"/>
+    <property name="java.version.date" value="2022-09-20"/>
+    <property name="java.vendor.url.bug" value="https://bugreport.java.com/bugreport/"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+  </properties>
+  <testcase classname="pageObject.MainTest" name="clickJoinButton" time="2.826">
+    <failure message="Unable to locate element: [class=&apos;button_MRo+t desktopOnly_w-2LU&apos;]
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: &apos;4.8.1&apos;, revision: &apos;8ebccac989&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;19&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [c0f5a411-e562-4748-a85a-bd980661c4f5, findElement {using=css selector, value=[class=&apos;button_MRo+t desktopOnly_w-2LU&apos;]}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 112.0.1, moz:accessibilityChecks: false, moz:buildID: 20230414125621, moz:debuggerAddress: 127.0.0.1:5721, moz:geckodriverVersion: 0.33.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 7284, moz:profile: C:\Users\USER\AppData\Local..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://127.0.0.1:5721/devtool..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: c0f5a411-e562-4748-a85a-bd980661c4f5" type="org.openqa.selenium.NoSuchElementException">org.openqa.selenium.NoSuchElementException: Unable to locate element: [class=&apos;button_MRo+t desktopOnly_w-2LU&apos;]
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: &apos;4.8.1&apos;, revision: &apos;8ebccac989&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;19&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [c0f5a411-e562-4748-a85a-bd980661c4f5, findElement {using=css selector, value=[class=&apos;button_MRo+t desktopOnly_w-2LU&apos;]}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 112.0.1, moz:accessibilityChecks: false, moz:buildID: 20230414125621, moz:debuggerAddress: 127.0.0.1:5721, moz:geckodriverVersion: 0.33.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 7284, moz:profile: C:\Users\USER\AppData\Local..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://127.0.0.1:5721/devtool..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: c0f5a411-e562-4748-a85a-bd980661c4f5
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at pageObject.loginPage.LoginPage.clickJoinButton(LoginPage.java:28)
+	at pageObject.MainTest.clickJoinButton(MainTest.java:16)
+</failure>
+    <system-out>Configuring TestNG with: org.apache.maven.surefire.testng.conf.TestNG652Configurator@783e6358
+</system-out>
+    <system-err>SLF4J: Failed to load class &quot;org.slf4j.impl.StaticLoggerBinder&quot;.
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+log4j:WARN No appenders could be found for logger (io.netty.util.internal.logging.InternalLoggerFactory).
+log4j:WARN Please initialize the log4j system properly.
+log4j:WARN See http://logging.apache.org/log4j/1.2/faq.html#noconfig for more info.
+1681841323292	geckodriver	INFO	Listening on 127.0.0.1:3836
+1681841323566	mozrunner::runner	INFO	Running command: &quot;C:\\Program Files (x86)\\Mozilla Firefox\\firefox.exe&quot; &quot;--marionette&quot; &quot;--remote-debugging-port&quot; &quot;35501&quot; &quot;-- ... /localhost:35501/,http://[::1]:35501/&quot; &quot;-no-remote&quot; &quot;-profile&quot; &quot;C:\\Users\\USER\\AppData\\Local\\Temp\\rust_mozprofiletosHXL&quot;
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1681841323914	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1681841323919	Marionette	INFO	Listening on port 52922
+WebDriver BiDi listening on ws://127.0.0.1:35501
+Read port: 52922
+1681841324129	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: &quot;get: No settings file exists, new profile?&quot; (new NotFoundError(&quot;Could not open the file at C:\\Users\\USER\\AppData\\Local\\Temp\\rust_mozprofiletosHXL\\search.json.mozlz4&quot;, (void 0)))
+[ERROR glean_core] Error setting metrics feature config: Json(Error(&quot;EOF while parsing a value&quot;, line: 1, column: 0))
+DevTools listening on ws://127.0.0.1:35501/devtools/browser/5e122ff5-64f1-4171-8700-b587422e0cd0
+console.error: (new TypeError(&quot;linkMap is undefined&quot;, &quot;resource://gre/modules/NewTabUtils.sys.mjs&quot;, 2019))
+апр. 18, 2023 9:08:47 PM pageObject.MainTest clickJoinButton
+INFO: Кликаем на иконку входа на сайт
+JavaScript error: , line 0: TypeError: ServiceWorker script at https://www.cybersport.ru/ffsw.js for scope https://www.cybersport.ru/ encountered an error during installation.
+1681841328133	geckodriver	INFO	Listening on 127.0.0.1:3320
+1681841328173	mozrunner::runner	INFO	Running command: &quot;C:\\Program Files (x86)\\Mozilla Firefox\\firefox.exe&quot; &quot;--marionette&quot; &quot;--remote-debugging-port&quot; &quot;5721&quot; &quot;--r ... ://localhost:5721/,http://[::1]:5721/&quot; &quot;-no-remote&quot; &quot;-profile&quot; &quot;C:\\Users\\USER\\AppData\\Local\\Temp\\rust_mozprofileIGpIEc&quot;
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1681841328537	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1681841328542	Marionette	INFO	Listening on port 52990
+Read port: 52990
+WebDriver BiDi listening on ws://127.0.0.1:5721
+1681841328675	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: &quot;get: No settings file exists, new profile?&quot; (new NotFoundError(&quot;Could not open the file at C:\\Users\\USER\\AppData\\Local\\Temp\\rust_mozprofileIGpIEc\\search.json.mozlz4&quot;, (void 0)))
+[ERROR glean_core] Error setting metrics feature config: Json(Error(&quot;EOF while parsing a value&quot;, line: 1, column: 0))
+DevTools listening on ws://127.0.0.1:5721/devtools/browser/18b90ffd-fa68-4d6a-a363-369f458485f0
+</system-err>
+  </testcase>
+  <testcase classname="pageObject.MainTest" name="clickJoinWithInvalidLogin" time="0.032">
+    <failure message="Unable to locate element: [class=&apos;button_MRo+t desktopOnly_w-2LU&apos;]
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: &apos;4.8.1&apos;, revision: &apos;8ebccac989&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;19&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [c0f5a411-e562-4748-a85a-bd980661c4f5, findElement {using=css selector, value=[class=&apos;button_MRo+t desktopOnly_w-2LU&apos;]}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 112.0.1, moz:accessibilityChecks: false, moz:buildID: 20230414125621, moz:debuggerAddress: 127.0.0.1:5721, moz:geckodriverVersion: 0.33.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 7284, moz:profile: C:\Users\USER\AppData\Local..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://127.0.0.1:5721/devtool..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: c0f5a411-e562-4748-a85a-bd980661c4f5" type="org.openqa.selenium.NoSuchElementException">org.openqa.selenium.NoSuchElementException: Unable to locate element: [class=&apos;button_MRo+t desktopOnly_w-2LU&apos;]
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: &apos;4.8.1&apos;, revision: &apos;8ebccac989&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;19&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [c0f5a411-e562-4748-a85a-bd980661c4f5, findElement {using=css selector, value=[class=&apos;button_MRo+t desktopOnly_w-2LU&apos;]}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 112.0.1, moz:accessibilityChecks: false, moz:buildID: 20230414125621, moz:debuggerAddress: 127.0.0.1:5721, moz:geckodriverVersion: 0.33.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 7284, moz:profile: C:\Users\USER\AppData\Local..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://127.0.0.1:5721/devtool..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: c0f5a411-e562-4748-a85a-bd980661c4f5
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at pageObject.loginPage.LoginPage.clickJoinButton(LoginPage.java:28)
+	at pageObject.MainTest.clickJoinWithInvalidLogin(MainTest.java:39)
+</failure>
+    <system-err>1681841330757	geckodriver	INFO	Listening on 127.0.0.1:25811
+1681841330792	mozrunner::runner	INFO	Running command: &quot;C:\\Program Files (x86)\\Mozilla Firefox\\firefox.exe&quot; &quot;--marionette&quot; &quot;--remote-debugging-port&quot; &quot;22707&quot; &quot;-- ... /localhost:22707/,http://[::1]:22707/&quot; &quot;-no-remote&quot; &quot;-profile&quot; &quot;C:\\Users\\USER\\AppData\\Local\\Temp\\rust_mozprofileBZIsiS&quot;
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1681841331145	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1681841331150	Marionette	INFO	Listening on port 53011
+Read port: 53011
+WebDriver BiDi listening on ws://127.0.0.1:22707
+1681841331309	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: &quot;get: No settings file exists, new profile?&quot; (new NotFoundError(&quot;Could not open the file at C:\\Users\\USER\\AppData\\Local\\Temp\\rust_mozprofileBZIsiS\\search.json.mozlz4&quot;, (void 0)))
+[ERROR glean_core] Error setting metrics feature config: Json(Error(&quot;EOF while parsing a value&quot;, line: 1, column: 0))
+DevTools listening on ws://127.0.0.1:22707/devtools/browser/08a734ec-f23c-4977-bf01-2e2ed9982d66
+апр. 18, 2023 9:08:54 PM pageObject.MainTest clickJoinWithInvalidLogin
+INFO: Вводим неверный логин на сайт и авторизуемся
+</system-err>
+  </testcase>
+  <testcase classname="pageObject.MainTest" name="clickJoinWithInvalidLoginAndPassword" time="0.015">
+    <failure message="Unable to locate element: [class=&apos;button_MRo+t desktopOnly_w-2LU&apos;]
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: &apos;4.8.1&apos;, revision: &apos;8ebccac989&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;19&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [c0f5a411-e562-4748-a85a-bd980661c4f5, findElement {using=css selector, value=[class=&apos;button_MRo+t desktopOnly_w-2LU&apos;]}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 112.0.1, moz:accessibilityChecks: false, moz:buildID: 20230414125621, moz:debuggerAddress: 127.0.0.1:5721, moz:geckodriverVersion: 0.33.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 7284, moz:profile: C:\Users\USER\AppData\Local..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://127.0.0.1:5721/devtool..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: c0f5a411-e562-4748-a85a-bd980661c4f5" type="org.openqa.selenium.NoSuchElementException">org.openqa.selenium.NoSuchElementException: Unable to locate element: [class=&apos;button_MRo+t desktopOnly_w-2LU&apos;]
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: &apos;4.8.1&apos;, revision: &apos;8ebccac989&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;19&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [c0f5a411-e562-4748-a85a-bd980661c4f5, findElement {using=css selector, value=[class=&apos;button_MRo+t desktopOnly_w-2LU&apos;]}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 112.0.1, moz:accessibilityChecks: false, moz:buildID: 20230414125621, moz:debuggerAddress: 127.0.0.1:5721, moz:geckodriverVersion: 0.33.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 7284, moz:profile: C:\Users\USER\AppData\Local..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://127.0.0.1:5721/devtool..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: c0f5a411-e562-4748-a85a-bd980661c4f5
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at pageObject.loginPage.LoginPage.clickJoinButton(LoginPage.java:28)
+	at pageObject.MainTest.clickJoinWithInvalidLoginAndPassword(MainTest.java:31)
+</failure>
+    <system-err>JavaScript error: , line 0: TypeError: ServiceWorker script at https://www.cybersport.ru/ffsw.js for scope https://www.cybersport.ru/ encountered an error during installation.
+1681841335487	geckodriver	INFO	Listening on 127.0.0.1:37315
+1681841335512	mozrunner::runner	INFO	Running command: &quot;C:\\Program Files (x86)\\Mozilla Firefox\\firefox.exe&quot; &quot;--marionette&quot; &quot;--remote-debugging-port&quot; &quot;2171&quot; &quot;--r ... ://localhost:2171/,http://[::1]:2171/&quot; &quot;-no-remote&quot; &quot;-profile&quot; &quot;C:\\Users\\USER\\AppData\\Local\\Temp\\rust_mozprofileZx5AXK&quot;
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1681841335898	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1681841335903	Marionette	INFO	Listening on port 53079
+Read port: 53079
+WebDriver BiDi listening on ws://127.0.0.1:2171
+1681841336024	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: &quot;get: No settings file exists, new profile?&quot; (new NotFoundError(&quot;Could not open the file at C:\\Users\\USER\\AppData\\Local\\Temp\\rust_mozprofileZx5AXK\\search.json.mozlz4&quot;, (void 0)))
+[ERROR glean_core] Error setting metrics feature config: Json(Error(&quot;EOF while parsing a value&quot;, line: 1, column: 0))
+DevTools listening on ws://127.0.0.1:2171/devtools/browser/52207c31-7792-43c0-b055-4edce38cc417
+апр. 18, 2023 9:08:59 PM pageObject.MainTest clickJoinWithInvalidLoginAndPassword
+INFO: Вводим неверный логин и пароль на сайт и авторизуемся
+</system-err>
+  </testcase>
+  <testcase classname="pageObject.MainTest" name="clickJoinWithInvalidPassword" time="0.017">
+    <failure message="Unable to locate element: [class=&apos;button_MRo+t desktopOnly_w-2LU&apos;]
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: &apos;4.8.1&apos;, revision: &apos;8ebccac989&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;19&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [c0f5a411-e562-4748-a85a-bd980661c4f5, findElement {using=css selector, value=[class=&apos;button_MRo+t desktopOnly_w-2LU&apos;]}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 112.0.1, moz:accessibilityChecks: false, moz:buildID: 20230414125621, moz:debuggerAddress: 127.0.0.1:5721, moz:geckodriverVersion: 0.33.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 7284, moz:profile: C:\Users\USER\AppData\Local..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://127.0.0.1:5721/devtool..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: c0f5a411-e562-4748-a85a-bd980661c4f5" type="org.openqa.selenium.NoSuchElementException">org.openqa.selenium.NoSuchElementException: Unable to locate element: [class=&apos;button_MRo+t desktopOnly_w-2LU&apos;]
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: &apos;4.8.1&apos;, revision: &apos;8ebccac989&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;19&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [c0f5a411-e562-4748-a85a-bd980661c4f5, findElement {using=css selector, value=[class=&apos;button_MRo+t desktopOnly_w-2LU&apos;]}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 112.0.1, moz:accessibilityChecks: false, moz:buildID: 20230414125621, moz:debuggerAddress: 127.0.0.1:5721, moz:geckodriverVersion: 0.33.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 7284, moz:profile: C:\Users\USER\AppData\Local..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://127.0.0.1:5721/devtool..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: c0f5a411-e562-4748-a85a-bd980661c4f5
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at pageObject.loginPage.LoginPage.clickJoinButton(LoginPage.java:28)
+	at pageObject.MainTest.clickJoinWithInvalidPassword(MainTest.java:47)
+</failure>
+    <system-err>JavaScript error: , line 0: TypeError: ServiceWorker script at https://www.cybersport.ru/ffsw.js for scope https://www.cybersport.ru/ encountered an error during installation.
+1681841340102	geckodriver	INFO	Listening on 127.0.0.1:5511
+1681841340123	mozrunner::runner	INFO	Running command: &quot;C:\\Program Files (x86)\\Mozilla Firefox\\firefox.exe&quot; &quot;--marionette&quot; &quot;--remote-debugging-port&quot; &quot;21817&quot; &quot;-- ... /localhost:21817/,http://[::1]:21817/&quot; &quot;-no-remote&quot; &quot;-profile&quot; &quot;C:\\Users\\USER\\AppData\\Local\\Temp\\rust_mozprofilew96W4j&quot;
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1681841340505	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1681841340509	Marionette	INFO	Listening on port 53148
+Read port: 53148
+WebDriver BiDi listening on ws://127.0.0.1:21817
+1681841340618	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: &quot;get: No settings file exists, new profile?&quot; (new NotFoundError(&quot;Could not open the file at C:\\Users\\USER\\AppData\\Local\\Temp\\rust_mozprofilew96W4j\\search.json.mozlz4&quot;, (void 0)))
+[ERROR glean_core] Error setting metrics feature config: Json(Error(&quot;EOF while parsing a value&quot;, line: 1, column: 0))
+DevTools listening on ws://127.0.0.1:21817/devtools/browser/a9f24bd8-aafc-4e92-8723-a82d12679d35
+апр. 18, 2023 9:09:04 PM pageObject.MainTest clickJoinWithInvalidPassword
+INFO: Вводим неверный пароль на сайт и авторизуемся
+</system-err>
+  </testcase>
+  <testcase classname="pageObject.MainTest" name="clickJoinWithPassword" time="0.01">
+    <failure message="Unable to locate element: [class=&apos;button_MRo+t desktopOnly_w-2LU&apos;]
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: &apos;4.8.1&apos;, revision: &apos;8ebccac989&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;19&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [c0f5a411-e562-4748-a85a-bd980661c4f5, findElement {using=css selector, value=[class=&apos;button_MRo+t desktopOnly_w-2LU&apos;]}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 112.0.1, moz:accessibilityChecks: false, moz:buildID: 20230414125621, moz:debuggerAddress: 127.0.0.1:5721, moz:geckodriverVersion: 0.33.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 7284, moz:profile: C:\Users\USER\AppData\Local..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://127.0.0.1:5721/devtool..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: c0f5a411-e562-4748-a85a-bd980661c4f5" type="org.openqa.selenium.NoSuchElementException">org.openqa.selenium.NoSuchElementException: Unable to locate element: [class=&apos;button_MRo+t desktopOnly_w-2LU&apos;]
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: &apos;4.8.1&apos;, revision: &apos;8ebccac989&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;19&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [c0f5a411-e562-4748-a85a-bd980661c4f5, findElement {using=css selector, value=[class=&apos;button_MRo+t desktopOnly_w-2LU&apos;]}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 112.0.1, moz:accessibilityChecks: false, moz:buildID: 20230414125621, moz:debuggerAddress: 127.0.0.1:5721, moz:geckodriverVersion: 0.33.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 7284, moz:profile: C:\Users\USER\AppData\Local..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://127.0.0.1:5721/devtool..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: c0f5a411-e562-4748-a85a-bd980661c4f5
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at pageObject.loginPage.LoginPage.clickJoinButton(LoginPage.java:28)
+	at pageObject.MainTest.clickJoinWithPassword(MainTest.java:23)
+</failure>
+    <system-err>[Parent 22116, IPC I/O Parent] WARNING: DuplicateHandle failed for handle 0 in TransferHandles: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc:777
+JavaScript error: , line 0: TypeError: ServiceWorker script at https://www.cybersport.ru/ffsw.js for scope https://www.cybersport.ru/ encountered an error during installation.
+1681841344809	geckodriver	INFO	Listening on 127.0.0.1:4861
+1681841344828	mozrunner::runner	INFO	Running command: &quot;C:\\Program Files (x86)\\Mozilla Firefox\\firefox.exe&quot; &quot;--marionette&quot; &quot;--remote-debugging-port&quot; &quot;19152&quot; &quot;-- ... /localhost:19152/,http://[::1]:19152/&quot; &quot;-no-remote&quot; &quot;-profile&quot; &quot;C:\\Users\\USER\\AppData\\Local\\Temp\\rust_mozprofile9XA5UE&quot;
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1681841345192	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1681841345197	Marionette	INFO	Listening on port 53211
+WebDriver BiDi listening on ws://127.0.0.1:19152
+Read port: 53211
+1681841345397	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: &quot;get: No settings file exists, new profile?&quot; (new NotFoundError(&quot;Could not open the file at C:\\Users\\USER\\AppData\\Local\\Temp\\rust_mozprofile9XA5UE\\search.json.mozlz4&quot;, (void 0)))
+[ERROR glean_core] Error setting metrics feature config: Json(Error(&quot;EOF while parsing a value&quot;, line: 1, column: 0))
+DevTools listening on ws://127.0.0.1:19152/devtools/browser/1f3d4838-c6b3-4ec3-8e25-eec05542792c
+апр. 18, 2023 9:09:08 PM pageObject.MainTest clickJoinWithPassword
+INFO: Вводим логин и пароль на сайт и авторизуемся
+</system-err>
+  </testcase>
+  <testcase classname="pageObject.PageHeaderTest" name="clickBlogsPageTest" time="0.011">
+    <failure message="Unable to locate element: [href=&apos;/blog&apos;]
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: &apos;4.8.1&apos;, revision: &apos;8ebccac989&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;19&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [c0f5a411-e562-4748-a85a-bd980661c4f5, findElement {using=css selector, value=[href=&apos;/blog&apos;]}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 112.0.1, moz:accessibilityChecks: false, moz:buildID: 20230414125621, moz:debuggerAddress: 127.0.0.1:5721, moz:geckodriverVersion: 0.33.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 7284, moz:profile: C:\Users\USER\AppData\Local..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://127.0.0.1:5721/devtool..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: c0f5a411-e562-4748-a85a-bd980661c4f5" type="org.openqa.selenium.NoSuchElementException">org.openqa.selenium.NoSuchElementException: Unable to locate element: [href=&apos;/blog&apos;]
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: &apos;4.8.1&apos;, revision: &apos;8ebccac989&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;19&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [c0f5a411-e562-4748-a85a-bd980661c4f5, findElement {using=css selector, value=[href=&apos;/blog&apos;]}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 112.0.1, moz:accessibilityChecks: false, moz:buildID: 20230414125621, moz:debuggerAddress: 127.0.0.1:5721, moz:geckodriverVersion: 0.33.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 7284, moz:profile: C:\Users\USER\AppData\Local..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://127.0.0.1:5721/devtool..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: c0f5a411-e562-4748-a85a-bd980661c4f5
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at pageObject.pageHeader.Header.clickBlogsPage(Header.java:64)
+	at pageObject.PageHeaderTest.clickBlogsPageTest(PageHeaderTest.java:43)
+</failure>
+    <system-err>JavaScript error: , line 0: TypeError: ServiceWorker script at https://www.cybersport.ru/ffsw.js for scope https://www.cybersport.ru/ encountered an error during installation.
+1681841349299	geckodriver	INFO	Listening on 127.0.0.1:9034
+1681841349331	mozrunner::runner	INFO	Running command: &quot;C:\\Program Files (x86)\\Mozilla Firefox\\firefox.exe&quot; &quot;--marionette&quot; &quot;--remote-debugging-port&quot; &quot;4851&quot; &quot;--r ... ://localhost:4851/,http://[::1]:4851/&quot; &quot;-no-remote&quot; &quot;-profile&quot; &quot;C:\\Users\\USER\\AppData\\Local\\Temp\\rust_mozprofileHujrgt&quot;
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1681841349690	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1681841349699	Marionette	INFO	Listening on port 53273
+Read port: 53273
+WebDriver BiDi listening on ws://127.0.0.1:4851
+1681841349849	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: &quot;get: No settings file exists, new profile?&quot; (new NotFoundError(&quot;Could not open the file at C:\\Users\\USER\\AppData\\Local\\Temp\\rust_mozprofileHujrgt\\search.json.mozlz4&quot;, (void 0)))
+[ERROR glean_core] Error setting metrics feature config: Json(Error(&quot;EOF while parsing a value&quot;, line: 1, column: 0))
+DevTools listening on ws://127.0.0.1:4851/devtools/browser/30d4c2ab-6f6d-4e23-a8f1-31f4077dd641
+апр. 18, 2023 9:09:13 PM pageObject.PageHeaderTest clickBlogsPageTest
+INFO: Проверяем кнопку Блоги
+</system-err>
+  </testcase>
+  <testcase classname="pageObject.PageHeaderTest" name="clickGamesPageTest" time="0.017">
+    <failure message="Unable to locate element: [href=&apos;/games&apos;]
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: &apos;4.8.1&apos;, revision: &apos;8ebccac989&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;19&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [c0f5a411-e562-4748-a85a-bd980661c4f5, findElement {using=css selector, value=[href=&apos;/games&apos;]}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 112.0.1, moz:accessibilityChecks: false, moz:buildID: 20230414125621, moz:debuggerAddress: 127.0.0.1:5721, moz:geckodriverVersion: 0.33.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 7284, moz:profile: C:\Users\USER\AppData\Local..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://127.0.0.1:5721/devtool..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: c0f5a411-e562-4748-a85a-bd980661c4f5" type="org.openqa.selenium.NoSuchElementException">org.openqa.selenium.NoSuchElementException: Unable to locate element: [href=&apos;/games&apos;]
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: &apos;4.8.1&apos;, revision: &apos;8ebccac989&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;19&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [c0f5a411-e562-4748-a85a-bd980661c4f5, findElement {using=css selector, value=[href=&apos;/games&apos;]}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 112.0.1, moz:accessibilityChecks: false, moz:buildID: 20230414125621, moz:debuggerAddress: 127.0.0.1:5721, moz:geckodriverVersion: 0.33.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 7284, moz:profile: C:\Users\USER\AppData\Local..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://127.0.0.1:5721/devtool..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: c0f5a411-e562-4748-a85a-bd980661c4f5
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at pageObject.pageHeader.Header.clickGamesPage(Header.java:68)
+	at pageObject.PageHeaderTest.clickGamesPageTest(PageHeaderTest.java:50)
+</failure>
+    <system-err>JavaScript error: , line 0: TypeError: ServiceWorker script at https://www.cybersport.ru/ffsw.js for scope https://www.cybersport.ru/ encountered an error during installation.
+1681841354076	geckodriver	INFO	Listening on 127.0.0.1:11774
+1681841354110	mozrunner::runner	INFO	Running command: &quot;C:\\Program Files (x86)\\Mozilla Firefox\\firefox.exe&quot; &quot;--marionette&quot; &quot;--remote-debugging-port&quot; &quot;3923&quot; &quot;--r ... ://localhost:3923/,http://[::1]:3923/&quot; &quot;-no-remote&quot; &quot;-profile&quot; &quot;C:\\Users\\USER\\AppData\\Local\\Temp\\rust_mozprofileYvGHcd&quot;
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1681841354465	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1681841354470	Marionette	INFO	Listening on port 53335
+Read port: 53335
+WebDriver BiDi listening on ws://127.0.0.1:3923
+1681841354628	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: &quot;get: No settings file exists, new profile?&quot; (new NotFoundError(&quot;Could not open the file at C:\\Users\\USER\\AppData\\Local\\Temp\\rust_mozprofileYvGHcd\\search.json.mozlz4&quot;, (void 0)))
+[ERROR glean_core] Error setting metrics feature config: Json(Error(&quot;EOF while parsing a value&quot;, line: 1, column: 0))
+DevTools listening on ws://127.0.0.1:3923/devtools/browser/7a0c76e4-e712-42c2-9cf7-9ce13b400a77
+апр. 18, 2023 9:09:18 PM pageObject.PageHeaderTest clickGamesPageTest
+INFO: Проверяем кнопку Игры
+</system-err>
+  </testcase>
+  <testcase classname="pageObject.PageHeaderTest" name="clickHomePageTest" time="0.015">
+    <failure message="Unable to locate element: .logo_u0Je5
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: &apos;4.8.1&apos;, revision: &apos;8ebccac989&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;19&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [c0f5a411-e562-4748-a85a-bd980661c4f5, findElement {using=class name, value=logo_u0Je5}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 112.0.1, moz:accessibilityChecks: false, moz:buildID: 20230414125621, moz:debuggerAddress: 127.0.0.1:5721, moz:geckodriverVersion: 0.33.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 7284, moz:profile: C:\Users\USER\AppData\Local..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://127.0.0.1:5721/devtool..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: c0f5a411-e562-4748-a85a-bd980661c4f5" type="org.openqa.selenium.NoSuchElementException">org.openqa.selenium.NoSuchElementException: Unable to locate element: .logo_u0Je5
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: &apos;4.8.1&apos;, revision: &apos;8ebccac989&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;19&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [c0f5a411-e562-4748-a85a-bd980661c4f5, findElement {using=class name, value=logo_u0Je5}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 112.0.1, moz:accessibilityChecks: false, moz:buildID: 20230414125621, moz:debuggerAddress: 127.0.0.1:5721, moz:geckodriverVersion: 0.33.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 7284, moz:profile: C:\Users\USER\AppData\Local..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://127.0.0.1:5721/devtool..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: c0f5a411-e562-4748-a85a-bd980661c4f5
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:66)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at pageObject.pageHeader.Header.clickHomePage(Header.java:38)
+	at pageObject.PageHeaderTest.clickHomePageTest(PageHeaderTest.java:15)
+</failure>
+    <system-err>JavaScript error: , line 0: TypeError: ServiceWorker script at https://www.cybersport.ru/ffsw.js for scope https://www.cybersport.ru/ encountered an error during installation.
+1681841359181	geckodriver	INFO	Listening on 127.0.0.1:22155
+1681841359201	mozrunner::runner	INFO	Running command: &quot;C:\\Program Files (x86)\\Mozilla Firefox\\firefox.exe&quot; &quot;--marionette&quot; &quot;--remote-debugging-port&quot; &quot;44152&quot; &quot;-- ... /localhost:44152/,http://[::1]:44152/&quot; &quot;-no-remote&quot; &quot;-profile&quot; &quot;C:\\Users\\USER\\AppData\\Local\\Temp\\rust_mozprofileMgKEAC&quot;
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1681841359579	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1681841359584	Marionette	INFO	Listening on port 53399
+Read port: 53399
+WebDriver BiDi listening on ws://127.0.0.1:44152
+1681841359698	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: &quot;get: No settings file exists, new profile?&quot; (new NotFoundError(&quot;Could not open the file at C:\\Users\\USER\\AppData\\Local\\Temp\\rust_mozprofileMgKEAC\\search.json.mozlz4&quot;, (void 0)))
+[ERROR glean_core] Error setting metrics feature config: Json(Error(&quot;EOF while parsing a value&quot;, line: 1, column: 0))
+DevTools listening on ws://127.0.0.1:44152/devtools/browser/43a5ce1f-0aab-4d66-9b08-6d9593a235e6
+апр. 18, 2023 9:09:23 PM pageObject.PageHeaderTest clickHomePageTest
+INFO: Проверяем кнопку главной страницы
+</system-err>
+  </testcase>
+  <testcase classname="pageObject.PageHeaderTest" name="clickMatchesPageTest" time="0.009">
+    <failure message="Unable to locate element: [href=&apos;/matches&apos;]
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: &apos;4.8.1&apos;, revision: &apos;8ebccac989&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;19&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [c0f5a411-e562-4748-a85a-bd980661c4f5, findElement {using=css selector, value=[href=&apos;/matches&apos;]}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 112.0.1, moz:accessibilityChecks: false, moz:buildID: 20230414125621, moz:debuggerAddress: 127.0.0.1:5721, moz:geckodriverVersion: 0.33.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 7284, moz:profile: C:\Users\USER\AppData\Local..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://127.0.0.1:5721/devtool..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: c0f5a411-e562-4748-a85a-bd980661c4f5" type="org.openqa.selenium.NoSuchElementException">org.openqa.selenium.NoSuchElementException: Unable to locate element: [href=&apos;/matches&apos;]
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: &apos;4.8.1&apos;, revision: &apos;8ebccac989&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;19&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [c0f5a411-e562-4748-a85a-bd980661c4f5, findElement {using=css selector, value=[href=&apos;/matches&apos;]}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 112.0.1, moz:accessibilityChecks: false, moz:buildID: 20230414125621, moz:debuggerAddress: 127.0.0.1:5721, moz:geckodriverVersion: 0.33.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 7284, moz:profile: C:\Users\USER\AppData\Local..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://127.0.0.1:5721/devtool..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: c0f5a411-e562-4748-a85a-bd980661c4f5
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at pageObject.pageHeader.Header.clickMatchesPage(Header.java:47)
+	at pageObject.PageHeaderTest.clickMatchesPageTest(PageHeaderTest.java:22)
+</failure>
+    <system-err>JavaScript error: , line 0: TypeError: ServiceWorker script at https://www.cybersport.ru/ffsw.js for scope https://www.cybersport.ru/ encountered an error during installation.
+1681841364007	geckodriver	INFO	Listening on 127.0.0.1:1173
+1681841364065	mozrunner::runner	INFO	Running command: &quot;C:\\Program Files (x86)\\Mozilla Firefox\\firefox.exe&quot; &quot;--marionette&quot; &quot;--remote-debugging-port&quot; &quot;24611&quot; &quot;-- ... /localhost:24611/,http://[::1]:24611/&quot; &quot;-no-remote&quot; &quot;-profile&quot; &quot;C:\\Users\\USER\\AppData\\Local\\Temp\\rust_mozprofilelunTug&quot;
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1681841364430	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1681841364436	Marionette	INFO	Listening on port 53465
+WebDriver BiDi listening on ws://127.0.0.1:24611
+Read port: 53465
+1681841364680	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: &quot;get: No settings file exists, new profile?&quot; (new NotFoundError(&quot;Could not open the file at C:\\Users\\USER\\AppData\\Local\\Temp\\rust_mozprofilelunTug\\search.json.mozlz4&quot;, (void 0)))
+[ERROR glean_core] Error setting metrics feature config: Json(Error(&quot;EOF while parsing a value&quot;, line: 1, column: 0))
+DevTools listening on ws://127.0.0.1:24611/devtools/browser/8663aa86-95ff-40f1-8c93-d7f563c79f8e
+апр. 18, 2023 9:09:28 PM pageObject.PageHeaderTest clickMatchesPageTest
+INFO: Проверяем кнопку Матчи
+</system-err>
+  </testcase>
+  <testcase classname="pageObject.PageHeaderTest" name="clickTeamsPageTest" time="0.008">
+    <failure message="Unable to locate element: [href=&apos;/teams&apos;]
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: &apos;4.8.1&apos;, revision: &apos;8ebccac989&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;19&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [c0f5a411-e562-4748-a85a-bd980661c4f5, findElement {using=css selector, value=[href=&apos;/teams&apos;]}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 112.0.1, moz:accessibilityChecks: false, moz:buildID: 20230414125621, moz:debuggerAddress: 127.0.0.1:5721, moz:geckodriverVersion: 0.33.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 7284, moz:profile: C:\Users\USER\AppData\Local..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://127.0.0.1:5721/devtool..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: c0f5a411-e562-4748-a85a-bd980661c4f5" type="org.openqa.selenium.NoSuchElementException">org.openqa.selenium.NoSuchElementException: Unable to locate element: [href=&apos;/teams&apos;]
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: &apos;4.8.1&apos;, revision: &apos;8ebccac989&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;19&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [c0f5a411-e562-4748-a85a-bd980661c4f5, findElement {using=css selector, value=[href=&apos;/teams&apos;]}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 112.0.1, moz:accessibilityChecks: false, moz:buildID: 20230414125621, moz:debuggerAddress: 127.0.0.1:5721, moz:geckodriverVersion: 0.33.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 7284, moz:profile: C:\Users\USER\AppData\Local..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://127.0.0.1:5721/devtool..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: c0f5a411-e562-4748-a85a-bd980661c4f5
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at pageObject.pageHeader.Header.clickTeamsPage(Header.java:60)
+	at pageObject.PageHeaderTest.clickTeamsPageTest(PageHeaderTest.java:36)
+</failure>
+    <system-err>JavaScript error: , line 0: TypeError: ServiceWorker script at https://www.cybersport.ru/ffsw.js for scope https://www.cybersport.ru/ encountered an error during installation.
+1681841368718	geckodriver	INFO	Listening on 127.0.0.1:24837
+1681841368755	mozrunner::runner	INFO	Running command: &quot;C:\\Program Files (x86)\\Mozilla Firefox\\firefox.exe&quot; &quot;--marionette&quot; &quot;--remote-debugging-port&quot; &quot;18885&quot; &quot;-- ... /localhost:18885/,http://[::1]:18885/&quot; &quot;-no-remote&quot; &quot;-profile&quot; &quot;C:\\Users\\USER\\AppData\\Local\\Temp\\rust_mozprofile68Ohns&quot;
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1681841369159	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1681841369165	Marionette	INFO	Listening on port 53530
+Read port: 53530
+WebDriver BiDi listening on ws://127.0.0.1:18885
+1681841369291	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: &quot;get: No settings file exists, new profile?&quot; (new NotFoundError(&quot;Could not open the file at C:\\Users\\USER\\AppData\\Local\\Temp\\rust_mozprofile68Ohns\\search.json.mozlz4&quot;, (void 0)))
+[ERROR glean_core] Error setting metrics feature config: Json(Error(&quot;EOF while parsing a value&quot;, line: 1, column: 0))
+DevTools listening on ws://127.0.0.1:18885/devtools/browser/67f2bda8-b370-4188-b03e-d0d8333e1342
+апр. 18, 2023 9:09:32 PM pageObject.PageHeaderTest clickTeamsPageTest
+INFO: Проверяем кнопку Команды
+</system-err>
+  </testcase>
+  <testcase classname="pageObject.PageHeaderTest" name="clickTournamentsPageTest" time="0.01">
+    <failure message="Unable to locate element: [href=&apos;/tournaments&apos;]
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: &apos;4.8.1&apos;, revision: &apos;8ebccac989&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;19&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [c0f5a411-e562-4748-a85a-bd980661c4f5, findElement {using=css selector, value=[href=&apos;/tournaments&apos;]}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 112.0.1, moz:accessibilityChecks: false, moz:buildID: 20230414125621, moz:debuggerAddress: 127.0.0.1:5721, moz:geckodriverVersion: 0.33.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 7284, moz:profile: C:\Users\USER\AppData\Local..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://127.0.0.1:5721/devtool..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: c0f5a411-e562-4748-a85a-bd980661c4f5" type="org.openqa.selenium.NoSuchElementException">org.openqa.selenium.NoSuchElementException: Unable to locate element: [href=&apos;/tournaments&apos;]
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: &apos;4.8.1&apos;, revision: &apos;8ebccac989&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;19&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [c0f5a411-e562-4748-a85a-bd980661c4f5, findElement {using=css selector, value=[href=&apos;/tournaments&apos;]}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 112.0.1, moz:accessibilityChecks: false, moz:buildID: 20230414125621, moz:debuggerAddress: 127.0.0.1:5721, moz:geckodriverVersion: 0.33.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 7284, moz:profile: C:\Users\USER\AppData\Local..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://127.0.0.1:5721/devtool..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: c0f5a411-e562-4748-a85a-bd980661c4f5
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at pageObject.pageHeader.Header.clickTournamentPage(Header.java:56)
+	at pageObject.PageHeaderTest.clickTournamentsPageTest(PageHeaderTest.java:29)
+</failure>
+    <system-err>JavaScript error: , line 0: TypeError: ServiceWorker script at https://www.cybersport.ru/ffsw.js for scope https://www.cybersport.ru/ encountered an error during installation.
+1681841373476	geckodriver	INFO	Listening on 127.0.0.1:38164
+1681841373509	mozrunner::runner	INFO	Running command: &quot;C:\\Program Files (x86)\\Mozilla Firefox\\firefox.exe&quot; &quot;--marionette&quot; &quot;--remote-debugging-port&quot; &quot;48718&quot; &quot;-- ... /localhost:48718/,http://[::1]:48718/&quot; &quot;-no-remote&quot; &quot;-profile&quot; &quot;C:\\Users\\USER\\AppData\\Local\\Temp\\rust_mozprofileRApiRB&quot;
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1681841373909	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1681841373914	Marionette	INFO	Listening on port 53603
+Read port: 53603
+WebDriver BiDi listening on ws://127.0.0.1:48718
+1681841374046	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: &quot;get: No settings file exists, new profile?&quot; (new NotFoundError(&quot;Could not open the file at C:\\Users\\USER\\AppData\\Local\\Temp\\rust_mozprofileRApiRB\\search.json.mozlz4&quot;, (void 0)))
+[ERROR glean_core] Error setting metrics feature config: Json(Error(&quot;EOF while parsing a value&quot;, line: 1, column: 0))
+DevTools listening on ws://127.0.0.1:48718/devtools/browser/ec32094d-f788-49e6-b51d-e9a3a06b767e
+апр. 18, 2023 9:09:37 PM pageObject.PageHeaderTest clickTournamentsPageTest
+INFO: Проверяем кнопку Турниры
+</system-err>
+  </testcase>
+  <testcase classname="pageObject.PageHeaderTest" name="searchIconTest" time="0.01">
+    <failure message="Unable to locate element: [type=&apos;button&apos;][class=&apos;action_tl-RG&apos;]
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: &apos;4.8.1&apos;, revision: &apos;8ebccac989&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;19&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [c0f5a411-e562-4748-a85a-bd980661c4f5, findElement {using=css selector, value=[type=&apos;button&apos;][class=&apos;action_tl-RG&apos;]}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 112.0.1, moz:accessibilityChecks: false, moz:buildID: 20230414125621, moz:debuggerAddress: 127.0.0.1:5721, moz:geckodriverVersion: 0.33.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 7284, moz:profile: C:\Users\USER\AppData\Local..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://127.0.0.1:5721/devtool..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: c0f5a411-e562-4748-a85a-bd980661c4f5" type="org.openqa.selenium.NoSuchElementException">org.openqa.selenium.NoSuchElementException: Unable to locate element: [type=&apos;button&apos;][class=&apos;action_tl-RG&apos;]
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: &apos;4.8.1&apos;, revision: &apos;8ebccac989&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;19&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [c0f5a411-e562-4748-a85a-bd980661c4f5, findElement {using=css selector, value=[type=&apos;button&apos;][class=&apos;action_tl-RG&apos;]}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 112.0.1, moz:accessibilityChecks: false, moz:buildID: 20230414125621, moz:debuggerAddress: 127.0.0.1:5721, moz:geckodriverVersion: 0.33.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 7284, moz:profile: C:\Users\USER\AppData\Local..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://127.0.0.1:5721/devtool..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: c0f5a411-e562-4748-a85a-bd980661c4f5
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at pageObject.pageHeader.Header.searchIcon(Header.java:24)
+	at pageObject.PageHeaderTest.searchIconTest(PageHeaderTest.java:57)
+</failure>
+    <system-err>JavaScript error: , line 0: TypeError: ServiceWorker script at https://www.cybersport.ru/ffsw.js for scope https://www.cybersport.ru/ encountered an error during installation.
+1681841378275	geckodriver	INFO	Listening on 127.0.0.1:38359
+1681841378301	mozrunner::runner	INFO	Running command: &quot;C:\\Program Files (x86)\\Mozilla Firefox\\firefox.exe&quot; &quot;--marionette&quot; &quot;--remote-debugging-port&quot; &quot;45857&quot; &quot;-- ... /localhost:45857/,http://[::1]:45857/&quot; &quot;-no-remote&quot; &quot;-profile&quot; &quot;C:\\Users\\USER\\AppData\\Local\\Temp\\rust_mozprofiledSBDp7&quot;
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1681841378665	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1681841378670	Marionette	INFO	Listening on port 53668
+WebDriver BiDi listening on ws://127.0.0.1:45857
+Read port: 53668
+1681841378801	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: &quot;get: No settings file exists, new profile?&quot; (new NotFoundError(&quot;Could not open the file at C:\\Users\\USER\\AppData\\Local\\Temp\\rust_mozprofiledSBDp7\\search.json.mozlz4&quot;, (void 0)))
+[ERROR glean_core] Error setting metrics feature config: Json(Error(&quot;EOF while parsing a value&quot;, line: 1, column: 0))
+DevTools listening on ws://127.0.0.1:45857/devtools/browser/4222e96b-0a0f-4b82-9906-42a205a03657
+апр. 18, 2023 9:09:42 PM pageObject.PageHeaderTest searchIconTest
+INFO: Проверяем кнопку Поиск
+</system-err>
+  </testcase>
+  <testcase classname="pageObject.PageHeaderTest" name="searchStringInvalidTest" time="0.007">
+    <failure message="Unable to locate element: [type=&apos;button&apos;][class=&apos;action_tl-RG&apos;]
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: &apos;4.8.1&apos;, revision: &apos;8ebccac989&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;19&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [c0f5a411-e562-4748-a85a-bd980661c4f5, findElement {using=css selector, value=[type=&apos;button&apos;][class=&apos;action_tl-RG&apos;]}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 112.0.1, moz:accessibilityChecks: false, moz:buildID: 20230414125621, moz:debuggerAddress: 127.0.0.1:5721, moz:geckodriverVersion: 0.33.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 7284, moz:profile: C:\Users\USER\AppData\Local..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://127.0.0.1:5721/devtool..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: c0f5a411-e562-4748-a85a-bd980661c4f5" type="org.openqa.selenium.NoSuchElementException">org.openqa.selenium.NoSuchElementException: Unable to locate element: [type=&apos;button&apos;][class=&apos;action_tl-RG&apos;]
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: &apos;4.8.1&apos;, revision: &apos;8ebccac989&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;19&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [c0f5a411-e562-4748-a85a-bd980661c4f5, findElement {using=css selector, value=[type=&apos;button&apos;][class=&apos;action_tl-RG&apos;]}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 112.0.1, moz:accessibilityChecks: false, moz:buildID: 20230414125621, moz:debuggerAddress: 127.0.0.1:5721, moz:geckodriverVersion: 0.33.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 7284, moz:profile: C:\Users\USER\AppData\Local..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://127.0.0.1:5721/devtool..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: c0f5a411-e562-4748-a85a-bd980661c4f5
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at pageObject.pageHeader.Header.searchIcon(Header.java:24)
+	at pageObject.PageHeaderTest.searchStringInvalidTest(PageHeaderTest.java:74)
+</failure>
+    <system-err>JavaScript error: , line 0: TypeError: ServiceWorker script at https://www.cybersport.ru/ffsw.js for scope https://www.cybersport.ru/ encountered an error during installation.
+1681841383028	geckodriver	INFO	Listening on 127.0.0.1:35493
+1681841383086	mozrunner::runner	INFO	Running command: &quot;C:\\Program Files (x86)\\Mozilla Firefox\\firefox.exe&quot; &quot;--marionette&quot; &quot;--remote-debugging-port&quot; &quot;44723&quot; &quot;-- ... /localhost:44723/,http://[::1]:44723/&quot; &quot;-no-remote&quot; &quot;-profile&quot; &quot;C:\\Users\\USER\\AppData\\Local\\Temp\\rust_mozprofile5KXzDT&quot;
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1681841383461	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1681841383468	Marionette	INFO	Listening on port 53728
+Read port: 53728
+WebDriver BiDi listening on ws://127.0.0.1:44723
+1681841383604	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: &quot;get: No settings file exists, new profile?&quot; (new NotFoundError(&quot;Could not open the file at C:\\Users\\USER\\AppData\\Local\\Temp\\rust_mozprofile5KXzDT\\search.json.mozlz4&quot;, (void 0)))
+[ERROR glean_core] Error setting metrics feature config: Json(Error(&quot;EOF while parsing a value&quot;, line: 1, column: 0))
+DevTools listening on ws://127.0.0.1:44723/devtools/browser/6d35b735-8513-4e6a-88cd-d85da590ae32
+апр. 18, 2023 9:09:47 PM pageObject.PageHeaderTest searchStringInvalidTest
+INFO: Проверяем строку поиска по сайту при невалидном значении строки
+</system-err>
+  </testcase>
+  <testcase classname="pageObject.PageHeaderTest" name="searchStringValidTest" time="0.006">
+    <failure message="Unable to locate element: [type=&apos;button&apos;][class=&apos;action_tl-RG&apos;]
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: &apos;4.8.1&apos;, revision: &apos;8ebccac989&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;19&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [c0f5a411-e562-4748-a85a-bd980661c4f5, findElement {using=css selector, value=[type=&apos;button&apos;][class=&apos;action_tl-RG&apos;]}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 112.0.1, moz:accessibilityChecks: false, moz:buildID: 20230414125621, moz:debuggerAddress: 127.0.0.1:5721, moz:geckodriverVersion: 0.33.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 7284, moz:profile: C:\Users\USER\AppData\Local..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://127.0.0.1:5721/devtool..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: c0f5a411-e562-4748-a85a-bd980661c4f5" type="org.openqa.selenium.NoSuchElementException">org.openqa.selenium.NoSuchElementException: Unable to locate element: [type=&apos;button&apos;][class=&apos;action_tl-RG&apos;]
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: &apos;4.8.1&apos;, revision: &apos;8ebccac989&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;19&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [c0f5a411-e562-4748-a85a-bd980661c4f5, findElement {using=css selector, value=[type=&apos;button&apos;][class=&apos;action_tl-RG&apos;]}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 112.0.1, moz:accessibilityChecks: false, moz:buildID: 20230414125621, moz:debuggerAddress: 127.0.0.1:5721, moz:geckodriverVersion: 0.33.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 7284, moz:profile: C:\Users\USER\AppData\Local..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://127.0.0.1:5721/devtool..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: c0f5a411-e562-4748-a85a-bd980661c4f5
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at pageObject.pageHeader.Header.searchIcon(Header.java:24)
+	at pageObject.PageHeaderTest.searchStringValidTest(PageHeaderTest.java:65)
+</failure>
+    <system-err>JavaScript error: , line 0: TypeError: ServiceWorker script at https://www.cybersport.ru/ffsw.js for scope https://www.cybersport.ru/ encountered an error during installation.
+1681841388044	geckodriver	INFO	Listening on 127.0.0.1:46551
+1681841388066	mozrunner::runner	INFO	Running command: &quot;C:\\Program Files (x86)\\Mozilla Firefox\\firefox.exe&quot; &quot;--marionette&quot; &quot;--remote-debugging-port&quot; &quot;43166&quot; &quot;-- ... /localhost:43166/,http://[::1]:43166/&quot; &quot;-no-remote&quot; &quot;-profile&quot; &quot;C:\\Users\\USER\\AppData\\Local\\Temp\\rust_mozprofileE3NBjW&quot;
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1681841388551	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1681841388557	Marionette	INFO	Listening on port 53798
+Read port: 53798
+WebDriver BiDi listening on ws://127.0.0.1:43166
+1681841388680	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: &quot;get: No settings file exists, new profile?&quot; (new NotFoundError(&quot;Could not open the file at C:\\Users\\USER\\AppData\\Local\\Temp\\rust_mozprofileE3NBjW\\search.json.mozlz4&quot;, (void 0)))
+[ERROR glean_core] Error setting metrics feature config: Json(Error(&quot;EOF while parsing a value&quot;, line: 1, column: 0))
+DevTools listening on ws://127.0.0.1:43166/devtools/browser/f6beb454-f55b-4aa4-9e06-2f33c92e0dcb
+апр. 18, 2023 9:09:52 PM pageObject.PageHeaderTest searchStringValidTest
+INFO: Проверяем строку поиска по сайту
+</system-err>
+  </testcase>
+</testsuite>
