@@ -8,7 +8,7 @@ public class LoginPage {
     private WebDriver driver;
     private final By buttonJoinToSite = By.cssSelector("[class='button_MRo+t desktopOnly_w-2LU']");
     private final By inputLogin = By.cssSelector("#__layout > div > div.vue-portal-target > div > div > div:nth-child(3) > div:nth-child(2) > form > div:nth-child(2) > label > input");
-    private final By  inputPassword = By.cssSelector("[type='password']");
+    private final By inputPassword = By.cssSelector("[type='password']");
     private final By buttonJoin = By.cssSelector("[class='button_+fnen type-orange_vubji button_62Kp9']");
     private final By iconAccount = By.cssSelector(".action_tl-RG.actionAccount_5BORL");
     private final By windowAuthorization = By.cssSelector(".container_56Rl5");
@@ -25,9 +25,6 @@ public class LoginPage {
                 .build()
                 .perform();
     }
-    public void checkWindowAuthorizationIsVisible(){
-        driver.findElement(windowAuthorization).isDisplayed();
-    }
 
     private void setLogin(String login) {
         driver.findElement(inputLogin).sendKeys(login);
@@ -41,30 +38,21 @@ public class LoginPage {
         driver.findElement(buttonJoin).click();
     }
 
-    public void attemptLogin() {
-        setLogin("test_dns@rambler.ru");
-        setPassword("123456_Test");
+    public void attemptLogin(String login, String password) {
+        setLogin(login);
+        setPassword(password);
         clickLoginButton();
     }
-    public void attemptInvalidLoginAndPassword() {
-        setLogin("qwerty");
-        setPassword("12345");
-        clickLoginButton();
+
+    public void checkWindowAuthorizationIsVisible() {
+        driver.findElement(windowAuthorization).isDisplayed();
     }
-    public void attemptInvalidLogin() {
-        setLogin("qwerty");
-        setPassword("123456_Test");
-        clickLoginButton();
-    }
-    public void attemptInvalidPassword() {
-        setLogin("test_dns@rambler.ru");
-        setPassword("12345");
-        clickLoginButton();
-    }
-    public String authorizationIsError(){
-        return driver.findElement(invalidLoginAndPassword).getText();
-    }
-    public void checkIconIsVisible(){
+
+    public void checkIconIsVisible() {
         driver.findElement(iconAccount).isDisplayed();
+    }
+
+    public String authorizationIsError() {
+        return driver.findElement(invalidLoginAndPassword).getText();
     }
 }
