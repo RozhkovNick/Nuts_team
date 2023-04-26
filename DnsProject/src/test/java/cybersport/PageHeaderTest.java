@@ -1,72 +1,69 @@
 package cybersport;
 import org.testng.Assert;
+import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 import cybersport.helper.WebDriverContainer;
 import cybersport.page.mainpage.HeaderOneLineMainPage;
 
 public class PageHeaderTest extends BaseTest{
+    HeaderOneLineMainPage header;
+    @BeforeMethod
+    public void init(){
+        header = new HeaderOneLineMainPage(driver);
+    }
     @Test
-    public void clickHomePageTest(){
+    public void checkHomePageTest(){
         LOG.info("Проверяем кнопку главной страницы");
-        HeaderOneLineMainPage header = new HeaderOneLineMainPage(WebDriverContainer.getDriver());
         header.clickHomePage();
         Assert.assertEquals(header.checkTextHomePage(),"Главные новости");
     }
     @Test
-    public void clickMatchesPageTest(){
+    public void checkMatchesPageTest(){
         LOG.info("Проверяем кнопку Матчи");
-        HeaderOneLineMainPage header = new HeaderOneLineMainPage(WebDriverContainer.getDriver());
         header.clickMatchesPage();
         Assert.assertEquals(header.checkTitleTextPage(),"Матчи");
     }
     @Test
-    public void clickTournamentsPageTest(){
+    public void checkTournamentsPageTest(){
         LOG.info("Проверяем кнопку Турниры");
-        HeaderOneLineMainPage header = new HeaderOneLineMainPage(WebDriverContainer.getDriver());
         header.clickTournamentPage();
         Assert.assertEquals(header.checkTitleTextPage(),"Турниры");
     }
     @Test
-    public void clickTeamsPageTest(){
+    public void checkTeamsPageTest(){
         LOG.info("Проверяем кнопку Команды");
-        HeaderOneLineMainPage header = new HeaderOneLineMainPage(WebDriverContainer.getDriver());
         header.clickTeamsPage();
         Assert.assertEquals(header.checkTitleTextPage(),"Команды");
     }
     @Test
-    public void clickBlogsPageTest(){
+    public void checkBlogsPageTest(){
         LOG.info("Проверяем кнопку Блоги");
-        HeaderOneLineMainPage header = new HeaderOneLineMainPage(WebDriverContainer.getDriver());
         header.clickBlogsPage();
         Assert.assertEquals(header.checkTitleTextPage(),"Блоги");
     }
     @Test
-    public void clickGamesPageTest(){
+    public void checkGamesPageTest(){
         LOG.info("Проверяем кнопку Игры");
-        HeaderOneLineMainPage header = new HeaderOneLineMainPage(WebDriverContainer.getDriver());
         header.clickGamesPage();
         Assert.assertEquals(header.checkTitleTextPage(),"Игры");
     }
     @Test
-    public void searchIconTest(){
+    public void checkSearchIconTest(){
         LOG.info("Проверяем кнопку Поиск");
-        HeaderOneLineMainPage header = new HeaderOneLineMainPage(WebDriverContainer.getDriver());
         header.searchIcon();
         header.searchStringIsVisible();
     }
     @Test
-    public void searchStringValidTest(){
+    public void checkSearchStringValidTest(){
         LOG.info("Проверяем строку поиска по сайту");
-        HeaderOneLineMainPage header = new HeaderOneLineMainPage(WebDriverContainer.getDriver());
         String text = "virtus";
         header.searchIcon();
         header.searchString(text);
         Assert.assertEquals(header.checkTitleTextPage(), "Результаты: "+text);
     }
     @Test
-    public void searchStringInvalidTest(){
+    public void checkSearchStringInvalidTest(){
         LOG.info("Проверяем строку поиска по сайту при невалидном значении строки");
-        HeaderOneLineMainPage header = new HeaderOneLineMainPage(WebDriverContainer.getDriver());
         String text = "12345";
         header.searchIcon();
         header.searchString(text);

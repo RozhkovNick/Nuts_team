@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="All Test Suite">
+<suite name="All Test Suite" parallel="tests" thread-count="10">
     <test verbose="2" preserve-order="true" name="C:/Users/USER/Desktop/DnsProject">
         <classes>
-            <class name="cybersport.MainTest"></class>
-            <class name="cybersport.PageHeaderTest"></class>
-            <class name="cybersport.PageHeaderTwoLineTest"></class>
-            <class name="cybersport.FooterTest"></class>
+            <class name="cybersport.MainTest"/>
+            <class name="cybersport.PageHeaderTest"/>
+            <class name="cybersport.PageHeaderTwoLineTest"/>
+            <class name="cybersport.FooterTest"/>
         </classes>
     </test>
 </suite>

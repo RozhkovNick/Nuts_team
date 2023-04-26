@@ -2,22 +2,17 @@ package cybersport.page.loginPage;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
-import org.openqa.selenium.support.FindBy;
 
 public class LoginPage {
     private WebDriver driver;
-    private By buttonJoinToSite = By.cssSelector("[class='button_MRo+t desktopOnly_w-2LU']");
-    @FindBy(css = "#__layout > div > div.vue-portal-target > div > div > div:nth-child(3) > div:nth-child(2) > form > div:nth-child(2) > label > input")
-    private WebElement inputLogin;
-    @FindBy(css = "[type='password']")
-    private WebElement inputPassword;
-    @FindBy(css = "[class='button_+fnen type-orange_vubji button_62Kp9']")
-    private WebElement buttonJoin;
-    private By iconAccount = By.cssSelector(".action_tl-RG.actionAccount_5BORL");
-    private By windowAuthorization = By.cssSelector(".container_56Rl5");
-    private By invalidLoginAndPassword = By.xpath("//form/div[3]/div");
+    private final By buttonJoinToSite = By.cssSelector("[class='button_MRo+t desktopOnly_w-2LU']");
+    private final By inputLogin = By.cssSelector("#__layout > div > div.vue-portal-target > div > div > div:nth-child(3) > div:nth-child(2) > form > div:nth-child(2) > label > input");
+    private final By  inputPassword = By.cssSelector("[type='password']");
+    private final By buttonJoin = By.cssSelector("[class='button_+fnen type-orange_vubji button_62Kp9']");
+    private final By iconAccount = By.cssSelector(".action_tl-RG.actionAccount_5BORL");
+    private final By windowAuthorization = By.cssSelector(".container_56Rl5");
+    private final By invalidLoginAndPassword = By.xpath("//form/div[3]/div");
 
     public LoginPage(WebDriver driver) {
         this.driver = driver;
@@ -35,15 +30,15 @@ public class LoginPage {
     }
 
     private void setLogin(String login) {
-        inputLogin.sendKeys(login);
+        driver.findElement(inputLogin).sendKeys(login);
     }
 
     private void setPassword(String password) {
-        inputPassword.sendKeys(password);
+        driver.findElement(inputPassword).sendKeys(password);
     }
 
     private void clickLoginButton() {
-        buttonJoin.click();
+        driver.findElement(buttonJoin).click();
     }
 
     public void attemptLogin() {
@@ -67,11 +62,9 @@ public class LoginPage {
         clickLoginButton();
     }
     public String authorizationIsError(){
-       String text = driver.findElement(invalidLoginAndPassword).getText();
-        return text;
+        return driver.findElement(invalidLoginAndPassword).getText();
     }
     public void checkIconIsVisible(){
         driver.findElement(iconAccount).isDisplayed();
     }
 }
-//form > div:nth-child(3) > div   неверный логин
