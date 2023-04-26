@@ -2,7 +2,6 @@ package cybersport;
 import org.testng.Assert;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
-import cybersport.helper.WebDriverContainer;
 import cybersport.page.mainpage.HeaderOneLineMainPage;
 
 public class PageHeaderTest extends BaseTest{

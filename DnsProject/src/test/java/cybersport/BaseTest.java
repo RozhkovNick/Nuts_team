@@ -5,7 +5,6 @@ import org.openqa.selenium.WebDriver;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import cybersport.helper.WebDriverContainer;
-
 import java.util.concurrent.TimeUnit;
 import java.util.logging.Logger;
 
@@ -14,7 +13,7 @@ public class BaseTest {
     public WebDriver driver;
 
     @BeforeMethod(description = "Вход на сайт")
-    public  void beforeTest(){
+    public void beforeTest() {
         driver = WebDriverContainer.getDriver();
         driver.get("https://www.cybersport.ru/");
         driver.manage().window().setSize(new Dimension(1980, 1020));

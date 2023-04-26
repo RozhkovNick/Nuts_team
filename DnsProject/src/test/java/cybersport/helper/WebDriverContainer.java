@@ -4,6 +4,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.edge.EdgeDriver;
+import org.openqa.selenium.edge.EdgeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
 
 public class WebDriverContainer {
@@ -15,7 +16,11 @@ public class WebDriverContainer {
 
         switch (browsers) {
             case firefox -> driver = new FirefoxDriver();
-            case ie -> driver = new EdgeDriver();
+            case ie -> {
+                EdgeOptions options1 = new EdgeOptions();
+                options1.addArguments("--remote-allow-origins=*");
+                driver = new EdgeDriver(options1);
+            }
             default -> {
                 ChromeOptions options = new ChromeOptions();
                 options.addArguments("--remote-allow-origins=*");

@@ -2,7 +2,6 @@ package cybersport.page.mainpage;
 
 import org.openqa.selenium.*;
 
-
 public class HeaderOneLineMainPage {
     private WebDriver driver;
     private final By homePageButton = By.className("logo_u0Je5");
@@ -16,24 +15,29 @@ public class HeaderOneLineMainPage {
     private final By searchButton = By.cssSelector("[type='button'][class='action_tl-RG']");
     private final By searchString = By.cssSelector(".input_VpfrS");
     private final By textInvalidSearch = By.cssSelector(".empty-message.empty_5gFLL");
+
     public HeaderOneLineMainPage(WebDriver driver) {
         this.driver = driver;
     }
 
-    public void searchIcon(){
-       driver.findElement(searchButton).click();
+    public void searchIcon() {
+        driver.findElement(searchButton).click();
     }
-    public void searchStringIsVisible(){
+
+    public void searchStringIsVisible() {
         driver.findElement(searchString).isDisplayed();
     }
-    public String checkTextInvalidSearch(){
+
+    public String checkTextInvalidSearch() {
         String text = driver.findElement(textInvalidSearch).getText();
         return text;
     }
-    public void searchString(String a){
+
+    public void searchString(String a) {
         driver.findElement(searchString).sendKeys(a);
         driver.findElement(searchString).sendKeys(Keys.ENTER);
     }
+
     public void clickHomePage() {
         driver.findElement(homePageButton).click();
     }

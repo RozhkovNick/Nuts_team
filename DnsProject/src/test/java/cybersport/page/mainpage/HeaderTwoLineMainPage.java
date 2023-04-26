@@ -32,88 +32,110 @@ public class HeaderTwoLineMainPage {
     public HeaderTwoLineMainPage(WebDriver driver) {
         this.driver = driver;
     }
+
     public String checkTitleTextPage() {
         String text = driver.findElement(pageTitle).getText();
         return text;
     }
+
     public void clickDotaTwoButtonPage() {
         driver.findElement(dotaTwoButton).click();
     }
+
     public void clickCsGoButtonPage() {
         driver.findElement(cs_goButton).click();
     }
+
     public void clickLeagueOfLegendsButtonPage() {
         driver.findElement(stillButton).click();
         driver.findElement(leagueOfLegendsButton).click();
     }
+
     public void clickWarcraftThreeButtonPage() {
         driver.findElement(stillButton).click();
         driver.findElement(warcraftThreeButton).click();
     }
+
     public void clickRainbowSixSiegeButtonPage() {
         driver.findElement(stillButton).click();
         driver.findElement(rainbowSixSiegeButton).click();
     }
+
     public void clickPUBGButtonPage() {
         driver.findElement(stillButton).click();
         driver.findElement(pubgButton).click();
     }
+
     public void clickFortnitePage() {
         driver.findElement(stillButton).click();
         driver.findElement(fortniteButton).click();
     }
+
     public void clickApexLegendsPage() {
         driver.findElement(stillButton).click();
         driver.findElement(apexLegendsButton).click();
     }
+
     public void clickValorantPage() {
         driver.findElement(stillButton).click();
         driver.findElement(valorantButton).click();
     }
+
     public void clickOverwatchPage() {
         driver.findElement(stillButton).click();
         driver.findElement(overwatchButton).click();
     }
+
     public void clickHearthstonePage() {
         driver.findElement(stillButton).click();
         driver.findElement(hearthstoneButton).click();
     }
+
     public void clickFIFAPage() {
         driver.findElement(stillButton).click();
         driver.findElement(fifaButton).click();
     }
+
     public void clickFreeFirePage() {
         driver.findElement(stillButton).click();
         driver.findElement(free_fireButton).click();
     }
+
     public void clickWarfacePage() {
         driver.findElement(stillButton).click();
         driver.findElement(warfaceButton).click();
     }
+
     public void clickStarcraftTwoPage() {
         driver.findElement(stillButton).click();
         driver.findElement(starcraftTwoButton).click();
     }
+
     public void clickHeroesOfTheStormPage() {
         driver.findElement(stillButton).click();
         driver.findElement(heroesOfTheStormButton).click();
     }
+
     public void clickQuakeChampionsPage() {
         driver.findElement(stillButton).click();
         driver.findElement(quakeChampionsButton).click();
     }
+
     public void clickDotaUnderlordsPage() {
         driver.findElement(stillButton).click();
         driver.findElement(dotaUnderlordsButton).click();
     }
+
     public void clickForecastPage() {
         driver.findElement(stillButton).click();
         driver.findElement(forecastButton).click();
     }
+
     public void clickMoviesPage() {
         driver.findElement(stillButton).click();
         driver.findElement(moviesButton).click();
     }
+
     public void clickCosplayPage() {
         driver.findElement(stillButton).click();
         driver.findElement(cosplayButton).click();

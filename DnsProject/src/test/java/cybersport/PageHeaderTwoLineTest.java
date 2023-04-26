@@ -1,142 +1,162 @@
 package cybersport;
 
-import cybersport.page.mainpage.FooterMainPage;
 import org.testng.Assert;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 import cybersport.page.mainpage.HeaderTwoLineMainPage;
-import cybersport.helper.WebDriverContainer;
 
 public class PageHeaderTwoLineTest extends BaseTest {
     HeaderTwoLineMainPage header;
+
     @BeforeMethod
-    public void init(){
+    public void init() {
         header = new HeaderTwoLineMainPage(driver);
     }
+
     @Test
-    public void checkDotaTwoPageTest(){
+    public void checkDotaTwoPageTest() {
         LOG.info("Проверяем кнопку Dota 2");
         header.clickDotaTwoButtonPage();
-        Assert.assertEquals(header.checkTitleTextPage(),"Dota 2");
+        Assert.assertEquals(header.checkTitleTextPage(), "Dota 2");
     }
+
     @Test
-    public void checkCsGoPageTest(){
+    public void checkCsGoPageTest() {
         LOG.info("Проверяем кнопку CS:GO");
         header.clickCsGoButtonPage();
-        Assert.assertEquals(header.checkTitleTextPage(),"CS:GO");
+        Assert.assertEquals(header.checkTitleTextPage(), "CS:GO");
     }
+
     @Test
-    public void checkLeagueOfLegendsPageTest(){
+    public void checkLeagueOfLegendsPageTest() {
         LOG.info("Проверяем кнопку League of Legends");
         header.clickLeagueOfLegendsButtonPage();
-        Assert.assertEquals(header.checkTitleTextPage(),"League of Legends");
+        Assert.assertEquals(header.checkTitleTextPage(), "League of Legends");
     }
+
     @Test
-    public void checkWarcraftThreePageTest(){
+    public void checkWarcraftThreePageTest() {
         LOG.info("Проверяем кнопку Warcraft III");
         header.clickWarcraftThreeButtonPage();
-        Assert.assertEquals(header.checkTitleTextPage(),"Warcraft III");
+        Assert.assertEquals(header.checkTitleTextPage(), "Warcraft III");
     }
+
     @Test
-    public void checkRainbowSixSiegePageTest(){
+    public void checkRainbowSixSiegePageTest() {
         LOG.info("Проверяем кнопку Rainbow Six Siege");
         header.clickRainbowSixSiegeButtonPage();
-        Assert.assertEquals(header.checkTitleTextPage(),"Rainbow Six Siege");
+        Assert.assertEquals(header.checkTitleTextPage(), "Rainbow Six Siege");
     }
+
     @Test
-    public void checkPUBGBPageTest(){
+    public void checkPUBGBPageTest() {
         LOG.info("Проверяем кнопку PUBG");
         header.clickPUBGButtonPage();
-        Assert.assertEquals(header.checkTitleTextPage(),"PUBG");
+        Assert.assertEquals(header.checkTitleTextPage(), "PUBG");
     }
+
     @Test
-    public void checkFortnitePageTest(){
+    public void checkFortnitePageTest() {
         LOG.info("Проверяем кнопку Fortnite");
         header.clickFortnitePage();
-        Assert.assertEquals(header.checkTitleTextPage(),"Fortnite");
+        Assert.assertEquals(header.checkTitleTextPage(), "Fortnite");
     }
+
     @Test
-    public void checkApexLegendsPageTest(){
+    public void checkApexLegendsPageTest() {
         LOG.info("Проверяем кнопку Apex Legends");
         header.clickApexLegendsPage();
-        Assert.assertEquals(header.checkTitleTextPage(),"Apex Legends");
+        Assert.assertEquals(header.checkTitleTextPage(), "Apex Legends");
     }
+
     @Test
-    public void checkValorantPageTest(){
+    public void checkValorantPageTest() {
         LOG.info("Проверяем кнопку Valorant");
         header.clickValorantPage();
-        Assert.assertEquals(header.checkTitleTextPage(),"Valorant");
+        Assert.assertEquals(header.checkTitleTextPage(), "Valorant");
     }
+
     @Test
-    public void checkOverwatchPageTest(){
+    public void checkOverwatchPageTest() {
         LOG.info("Проверяем кнопку Overwatch");
         header.clickOverwatchPage();
-        Assert.assertEquals(header.checkTitleTextPage(),"Overwatch");
+        Assert.assertEquals(header.checkTitleTextPage(), "Overwatch");
     }
+
     @Test
-    public void checkHearthstonePageTest(){
+    public void checkHearthstonePageTest() {
         LOG.info("Проверяем кнопку Hearthstone");
         header.clickHearthstonePage();
-        Assert.assertEquals(header.checkTitleTextPage(),"Hearthstone");
+        Assert.assertEquals(header.checkTitleTextPage(), "Hearthstone");
     }
+
     @Test
-    public void checkFIFAPageTest(){
+    public void checkFIFAPageTest() {
         LOG.info("Проверяем кнопку FIFA");
         header.clickFIFAPage();
-        Assert.assertEquals(header.checkTitleTextPage(),"FIFA");
+        Assert.assertEquals(header.checkTitleTextPage(), "FIFA");
     }
+
     @Test
-    public void checkFreeFirePageTest(){
+    public void checkFreeFirePageTest() {
         LOG.info("Проверяем кнопку Free Fire");
         header.clickFreeFirePage();
-        Assert.assertEquals(header.checkTitleTextPage(),"Free Fire");
+        Assert.assertEquals(header.checkTitleTextPage(), "Free Fire");
     }
+
     @Test
-    public void checkWarfacePageTest(){
+    public void checkWarfacePageTest() {
         LOG.info("Проверяем кнопку Warface");
         header.clickWarfacePage();
-        Assert.assertEquals(header.checkTitleTextPage(),"Warface");
+        Assert.assertEquals(header.checkTitleTextPage(), "Warface");
     }
+
     @Test
-    public void checkStarcraftPageTest(){
+    public void checkStarcraftPageTest() {
         LOG.info("Проверяем кнопку StarCraft 2");
         header.clickStarcraftTwoPage();
-        Assert.assertEquals(header.checkTitleTextPage(),"StarCraft 2");
+        Assert.assertEquals(header.checkTitleTextPage(), "StarCraft 2");
     }
+
     @Test
-    public void checkHeroesOfTheStormPageTest(){
+    public void checkHeroesOfTheStormPageTest() {
         LOG.info("Проверяем кнопку Heroes of the Storm");
         header.clickHeroesOfTheStormPage();
-        Assert.assertEquals(header.checkTitleTextPage(),"Heroes of the Storm");
+        Assert.assertEquals(header.checkTitleTextPage(), "Heroes of the Storm");
     }
+
     @Test
-    public void checkQuakeChampionsPageTest(){
+    public void checkQuakeChampionsPageTest() {
         LOG.info("Проверяем кнопку Quake Champions");
         header.clickQuakeChampionsPage();
-        Assert.assertEquals(header.checkTitleTextPage(),"Quake Champions");
+        Assert.assertEquals(header.checkTitleTextPage(), "Quake Champions");
     }
+
     @Test
-    public void checkDotaUnderlordsPageTest(){
+    public void checkDotaUnderlordsPageTest() {
         LOG.info("Проверяем кнопку Dota Underlords");
         header.clickDotaUnderlordsPage();
-        Assert.assertEquals(header.checkTitleTextPage(),"Dota Underlords");
+        Assert.assertEquals(header.checkTitleTextPage(), "Dota Underlords");
     }
+
     @Test
-    public void checkForecastPageTest(){
+    public void checkForecastPageTest() {
         LOG.info("Проверяем кнопку прогнозы");
         header.clickForecastPage();
-        Assert.assertEquals(header.checkTitleTextPage(),"Ставки и прогнозы");
+        Assert.assertEquals(header.checkTitleTextPage(), "Ставки и прогнозы");
     }
+
     @Test
-    public void checkMoviesPageTest(){
+    public void checkMoviesPageTest() {
         LOG.info("Проверяем кнопку Фильмы");
         header.clickMoviesPage();
-        Assert.assertEquals(header.checkTitleTextPage(),"Фильмы");
+        Assert.assertEquals(header.checkTitleTextPage(), "Фильмы");
     }
+
     @Test
-    public void checkCosplayPageTest(){
+    public void checkCosplayPageTest() {
         LOG.info("Проверяем кнопку Косплей");
         header.clickCosplayPage();
-        Assert.assertEquals(header.checkTitleTextPage(),"Косплей");
+        Assert.assertEquals(header.checkTitleTextPage(), "Косплей");
     }
 }
