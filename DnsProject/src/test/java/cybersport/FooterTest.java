@@ -6,7 +6,6 @@ import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 import cybersport.page.mainpage.FooterMainPage;
-import cybersport.helper.WebDriverContainer;
 
 public class FooterTest extends BaseTest {
     FooterMainPage footer;
