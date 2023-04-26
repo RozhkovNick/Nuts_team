@@ -3,10 +3,10 @@
 <suite name="All Test Suite">
     <test verbose="2" preserve-order="true" name="C:/Users/USER/Desktop/DnsProject">
         <classes>
-            <class name="pageObject.MainTest"></class>
-            <class name="pageObject.PageHeaderTest"></class>
-            <class name="pageObject.PageHeaderTwoLineTest"></class>
-            <class name="pageObject.FooterTest"></class>
+            <class name="cybersport.MainTest"></class>
+            <class name="cybersport.PageHeaderTest"></class>
+            <class name="cybersport.PageHeaderTwoLineTest"></class>
+            <class name="cybersport.FooterTest"></class>
         </classes>
     </test>
 </suite>
