@@ -13,9 +13,15 @@ public class LoginPage {
     private final By iconAccount = By.cssSelector(".action_tl-RG.actionAccount_5BORL");
     private final By windowAuthorization = By.cssSelector(".container_56Rl5");
     private final By invalidLoginAndPassword = By.xpath("//form/div[3]/div");
+    private final String initialWindow;
+    private final By termsUseSite = By.cssSelector("[href='/docs/site_rules.pdf']");
+    private final By personalProcessingPolicyCybersport = By.cssSelector("[href='/docs/privacy_policy.pdf']");
+    private final By personalProcessingPolicyGoogle = By.cssSelector("[href='https://policies.google.com/privacy']");
+    private final By workingConditions = By.cssSelector("[href='https://policies.google.com/terms']");
 
     public LoginPage(WebDriver driver) {
         this.driver = driver;
+        initialWindow = driver.getWindowHandle();
     }
 
     public void clickJoinButton() {
@@ -55,4 +61,33 @@ public class LoginPage {
     public String authorizationIsError() {
         return driver.findElement(invalidLoginAndPassword).getText();
     }
+
+    public void clickLinkTermsUseSite(){
+        driver.findElement(termsUseSite).click();
+    }
+
+    public void clickLinkPersonalProcessingPolicyCybersport(){
+        driver.findElement(personalProcessingPolicyCybersport).click();
+    }
+
+    public void clickLinkPersonalProcessingPolicyGoogle(){
+        driver.findElement(personalProcessingPolicyGoogle).click();
+    }
+
+    public void clickLinkWorkingConditions(){
+        driver.findElement(workingConditions).click();
+    }
+
+    public String checkURL() {
+        String url = driver.getCurrentUrl();
+        driver.close();
+        driver.switchTo().window(initialWindow);
+        return url;
+    }
+
+    public void switchWindow() {
+        String newTabHandle = driver.getWindowHandles().toArray()[1].toString();
+        driver.switchTo().window(newTabHandle);
+    }
+
 }

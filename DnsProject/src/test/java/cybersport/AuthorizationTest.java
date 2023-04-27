@@ -58,4 +58,40 @@ public class AuthorizationTest extends BaseTest {
         loginPage.attemptLogin(login, password);
         func.apply();
     }
+
+    @Test(testName = "Проверка ссылки правила пользования сайтом")
+    public void checkLinkTermsUseSite(){
+        LOG.info("Кликаем на ссылку Правила пользования сайтом");
+        loginPage.clickJoinButton();
+        loginPage.clickLinkTermsUseSite();
+        loginPage.switchWindow();
+        Assert.assertEquals(loginPage.checkURL(),"https://www.cybersport.ru/docs/site_rules.pdf");
+    }
+
+    @Test(testName = "Проверка ссылки политика обработки персональных данных Cybersport")
+    public void checkLinkPersonalProcessingPolicyCybersport(){
+        LOG.info("Кликаем на ссылку Политика обработки персональных данных Cybersport");
+        loginPage.clickJoinButton();
+        loginPage.clickLinkPersonalProcessingPolicyCybersport();
+        loginPage.switchWindow();
+        Assert.assertEquals(loginPage.checkURL(),"https://www.cybersport.ru/docs/privacy_policy.pdf");
+    }
+
+    @Test(testName = "Проверка ссылки политика обработки персональных данных Goggle")
+    public void checkLinkPersonalProcessingPolicyGoggle(){
+        LOG.info("Кликаем на ссылку Политика обработки персональных данных Goggle");
+        loginPage.clickJoinButton();
+        loginPage.clickLinkPersonalProcessingPolicyGoogle();
+        loginPage.switchWindow();
+        Assert.assertEquals(loginPage.checkURL(),"https://policies.google.com/privacy");
+    }
+
+    @Test(testName = "Проверка ссылки Условия работы")
+    public void checkLinkWorkingConditions(){
+        LOG.info("Кликаем на ссылку условия работы Goggle");
+        loginPage.clickJoinButton();
+        loginPage.clickLinkWorkingConditions();
+        loginPage.switchWindow();
+        Assert.assertEquals(loginPage.checkURL(),"https://policies.google.com/terms");
+    }
 }

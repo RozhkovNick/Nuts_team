@@ -34,10 +34,10 @@ public class FooterMainPage {
     }
 
     public String checkURL() {
-        String urlVk = driver.getCurrentUrl();
+        String url = driver.getCurrentUrl();
         driver.close();
         driver.switchTo().window(initialWindow);
-        return urlVk;
+        return url;
     }
 
     public void clickTelegramButton() {
