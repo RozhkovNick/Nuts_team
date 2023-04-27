@@ -7,6 +7,7 @@
             <class name="cybersport.PageHeaderTest"/>
             <class name="cybersport.PageHeaderTwoLineTest"/>
             <class name="cybersport.FooterTest"/>
+            <class name="cybersport.MatchesTest"/>
         </classes>
     </test>
 </suite>
