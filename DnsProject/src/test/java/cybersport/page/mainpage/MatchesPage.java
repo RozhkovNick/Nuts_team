@@ -8,11 +8,12 @@ public class MatchesPage {
     private final By buttonJoinMatches =
             By.xpath("//a[@class='button_+fnen type-bordered_w6rMh' and contains(text(), 'Все матчи')]");
     private final By pageTitle = By.className("page-title");
+
     public MatchesPage(WebDriver driver) {
         this.driver = driver;
     }
 
-    public void clickButtonAllMatches(){
+    public void clickButtonAllMatches() {
         driver.findElement(buttonJoinMatches).click();
     }
 

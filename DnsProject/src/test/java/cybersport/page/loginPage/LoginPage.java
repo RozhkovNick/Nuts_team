@@ -62,19 +62,19 @@ public class LoginPage {
         return driver.findElement(invalidLoginAndPassword).getText();
     }
 
-    public void clickLinkTermsUseSite(){
+    public void clickLinkTermsUseSite() {
         driver.findElement(termsUseSite).click();
     }
 
-    public void clickLinkPersonalProcessingPolicyCybersport(){
+    public void clickLinkPersonalProcessingPolicyCybersport() {
         driver.findElement(personalProcessingPolicyCybersport).click();
     }
 
-    public void clickLinkPersonalProcessingPolicyGoogle(){
+    public void clickLinkPersonalProcessingPolicyGoogle() {
         driver.findElement(personalProcessingPolicyGoogle).click();
     }
 
-    public void clickLinkWorkingConditions(){
+    public void clickLinkWorkingConditions() {
         driver.findElement(workingConditions).click();
     }
 
